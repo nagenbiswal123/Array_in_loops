@@ -1,0 +1,33 @@
+#write a acript to create an array with some elements and print all its elements by suing while loop , for loop, and advanced for loop?
+
+#! /bin/bash
+declare -a fruits
+fruits=("Apple" "Banana" "Orange" "Mango")
+fruit[4]="Grapes"
+
+echo "All elements by using while loop "
+echo "---------------------------------"
+
+i=0
+while [ $i -lt ${#fruits[@]} ]
+do
+ echo ${fruits[i]}
+ let i++
+done
+echo
+
+
+echo "All Elements By using normal for loop "
+echo "---------------------------------------"
+for fruits in ${fruits[@]}
+do 
+ echo $fruits
+done
+echo
+
+echo "All Elements By using advanced for loop"
+echo "---------------------------------------"
+for ((i=0; i<${#fruits[@]}; i++))
+do 
+ echo "${fruits[i]}"
+done
