@@ -31,3 +31,28 @@ for ((i=0; i<${#fruits[@]}; i++))
 do 
  echo "${fruits[i]}"
 done
+
+
+
+Output:
+-------
+All elements by using while loop 
+---------------------------------
+Apple
+Banana
+Orange
+Mango
+
+All Elements By using normal for loop 
+---------------------------------------
+Apple
+Banana
+Orange
+Mango
+
+All Elements By using advanced for loop
+---------------------------------------
+Mango
+Banana
+Orange
+Mango
